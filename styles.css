@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('images/canvas\ bg.png');
+  background-size: contain;
+  
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row; 
+  height: 100vh;
+}
+
+.image-container {
+  flex: 1;
+  background-size: cover;
+  position: relative;
+  padding: 4%;
+}
+
+.text-editor {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #baf874, #ffa442);
+  padding: 20px;
+  margin: 5%;
+  margin-top: 2%;
+  border-radius: 10px;
+  padding: 5%;
+  width: 50%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.text-editor:hover {
+  transform: scale(1.05); /* Increase size on hover */
+}
+.text-editor label {
+  margin-bottom: 2px;
+  display: flex;
+}
+
+.canvas-container {
+  flex: 2;
+  position: relative;
+  border: 2px solid #000000;
+  
+  background-image: url('images/canvas.png');
+  background-size: cover;
+  margin-right: 2%;
+   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+   background-repeat: no-repeat;
+   
+}
+
+
+@media screen and (max-width: 768px) {
+  canvas-container {
+    width: 100%;
+    
+}
+} 
